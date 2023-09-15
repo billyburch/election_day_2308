@@ -1,8 +1,8 @@
 class Candidate
 attr_reader :name, :party, :votes
-  def initialize(attributes, votes = 0)
-    @name = attributes.dig(:name)
-    @party = attributes.dig(:party)
+  def initialize(candidate_details, votes = 0)
+    @name = candidate_details[:name]
+    @party = candidate_details[:party]
     @votes = votes
   end
 
